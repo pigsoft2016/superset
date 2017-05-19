@@ -3,7 +3,8 @@ FROM ubuntu:14.04
 
 #WORKDIR /usr/src/app
 
-RUN apt-get update && install -y build-essential libssl-dev libffi-dev python-dev python-pip libsasl2-dev libldap2-dev
+RUN apt-get update 
+RUN apt-get install -y build-essential libssl-dev libffi-dev python-dev python-pip libsasl2-dev libldap2-dev
 
 #RUN pip install --upgrade setuptools pip
 #RUN pip install superset
